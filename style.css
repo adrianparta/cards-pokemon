@@ -1,0 +1,116 @@
+:root{
+    --snorlax-color: linear-gradient(60deg ,rgb(223, 249, 243),rgb(96, 158, 152));
+    --weezing-color: linear-gradient(60deg , rgb(197, 120, 249),rgb(199, 30, 255));
+    --alakazam-color: linear-gradient(60deg, rgb(235, 159, 252), rgb(196, 38, 112));
+    --nidoqueen-color: linear-gradient(60deg, rgb(203, 98, 32), rgba(189, 108, 214, 0.783));
+}
+
+body{
+    margin: auto;
+    background-color: antiquewhite;
+    font-family: monospace;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarjeta{
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 40px;
+    background-color:white;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 10px 10px;
+    overflow: hidden;
+    min-height: 480px;
+    max-height: 480px;
+}
+
+#snorlax{
+    background-image: var(--snorlax-color);
+}
+
+#weezing{
+    background-image: var(--weezing-color);
+}
+
+#alakazam{
+    background-image: var(--alakazam-color);
+}
+
+#nidoqueen{
+    background-image: var(--nidoqueen-color);
+}
+.pokemon-div{
+    height: 250px;
+    border-bottom-right-radius: 80% 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 180px;
+}
+
+.tipo{
+    min-height: 50px;
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen{
+    margin-left: 40px;
+    margin-top: 16px;
+}
+
+img{
+    width: 300px;
+}
+
+
+.texto-tipo{
+    display: flex;
+    margin: auto;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 1px 30px;
+}
+
+h2{ 
+    margin: 2px;
+    margin-top: -1px;
+    font-size: 20px;
+    text-shadow: black 3px 3px 3px;
+    color:aliceblue;
+}
+
+p{
+    margin-top: -10px;
+    font-size: 16px;
+    width: 300px;
+    text-align:center;
+}
+
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+}
